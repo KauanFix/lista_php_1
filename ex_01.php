@@ -13,5 +13,5 @@ function calcularFormula($x, $y)
 
 
 }
-
+echo ("Os números são 10 e 10, o resultado é ");
 echo calcularFormula(10, 10);
