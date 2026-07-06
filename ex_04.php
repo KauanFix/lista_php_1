@@ -4,7 +4,7 @@ function gerarSenha($quantiaCaracteres){
     $minusculas = "abcdefghijklmnopqrstuvwxyz";
     $maiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     $numeros = "1234567890";
-    $simbolos = "-+=*$#@!%&_?";
+    $simbolos = "-+=*$#@!%&_?<>,.;{}[]^~`";
 
     $senha1 = substr( str_shuffle($minusculas), 0, $quantiaCaracteres/4);
     $senha2 = substr( str_shuffle($maiusculas), 0, $quantiaCaracteres/4);
@@ -15,4 +15,4 @@ function gerarSenha($quantiaCaracteres){
     return $senhaFinal;
 }
 
-echo gerarSenha(1700000);
+echo gerarSenha(16);
