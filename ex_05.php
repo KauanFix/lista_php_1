@@ -20,6 +20,8 @@ function analisarTexto($string){
     
     $consoante -= $quantiaEspacos;
 
+    echo ("Frase Original: $string");
+    echo("<br>");
     echo ("quantidade de palavras: $quantiaPalavras");
     echo("<br>");
     echo ("quantidade de caracteres: $quantiaCaracteres");
