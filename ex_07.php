@@ -5,6 +5,7 @@ function calcularDesconto($valorCompra)
     $valorDescontado = 0;
     $descontoAplicado = 0;
     $porcentagemDesconto = 0;
+    
     if ($valorCompra <= 100) { 
         $descontoAplicado = 1; //Sem Desconto
     } else if ($valorCompra < 500) {
