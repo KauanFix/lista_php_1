@@ -4,6 +4,7 @@ function converterTemperatura($temp, $escalaInicial, $escalaFinal)
 {
     $valorConvertido = 0;
     if ($escalaInicial === 'Celsius') {
+
         if ($escalaFinal === 'Fahrenheit') {
             $valorConvertido = (($temp * 1.8) + 32);
         }
@@ -12,6 +13,7 @@ function converterTemperatura($temp, $escalaInicial, $escalaFinal)
         }
     }
     if ($escalaInicial === 'Fahrenheit') {
+
         if ($escalaFinal === 'Celsius') {
             $valorConvertido = ($temp - 32) * (5 / 9);
         }
@@ -20,6 +22,7 @@ function converterTemperatura($temp, $escalaInicial, $escalaFinal)
         }
     }
     if ($escalaInicial === 'Kelvin') {
+
         if ($escalaFinal === 'Celsius') {
             $valorConvertido = $temp - 273.15;
         }
@@ -30,4 +33,5 @@ function converterTemperatura($temp, $escalaInicial, $escalaFinal)
     return $valorConvertido;
 }
 
-echo converterTemperatura(77,'Fahrenheit', 'Celsius');
+echo ('a temperatura original é 77°F, a conversão para Celsius é: ');
+echo converterTemperatura(77, 'Fahrenheit', 'Celsius');
